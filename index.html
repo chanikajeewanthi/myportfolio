@@ -6,81 +6,281 @@
     <meta name="keywords" content="Java,CSS,html">
     <meta name="description" content="Welcome to my website. I'm Chanika Jeewanthi.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+
     <title>Home Page</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        section{
+            width: 100vw;
+            height: 100vh;
+            /*position: relative;*/
+        }
+
+        header{
+            height: 80px;
+            position: relative;
+        }
+        header>h2{
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: fit-content;
+            height: fit-content;
+            font-size: x-large;
+            color: #2b2f32;
+            font-style: italic;
+            font-family: Dialog;
+        }
+        header>nav{
+            position: absolute;
+            right: 50px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: fit-content;
+            height: fit-content;
+            font-size: medium;
+
+        }
+        header>nav>a{
+            text-decoration: none;
+            padding: 10px;
+            color: #313233;
+        }
+        #first{
+            width: 100vw;
+            height: 100vh;
+            font-size: calc(55px);
+            /*background-color: #8f9091;*/
+            text-align: center;
+        }
+        #main{
+            color: #0f1f53;
+        }
+        #main1{
+            color: #2f5978;
+        }
+        #main2{
+            color: #45979a;
+        }
+        #about{
+            width: 100vw;
+            height: 75vh;
+            /*position: relative;*/
+            /*background-color: #fff5df;*/
+        }
+
+        #about>div{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #img{
+            border-radius: 100%;
+            width: 250px;
+            height: 280px;
+            /*left: 150px;*/
+            /*top: 100px;*/
+            /*position: absolute;*/
+
+        }
+        #about>div>p{
+            width: 700px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: rgba(64, 58, 62, 0.4) 5px 5px, rgba(104, 101, 103, 0.3) 10px 10px, rgba(122, 115, 120, 0.2) 15px 15px, rgba(174, 167, 171, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+            height: 150px;
+            background-color: #9c9898;
+            border: 1px solid #2c292b;
+            margin: 15px;
+            padding: 15px;
+        }
+        #about_btn{
+            border: 1px solid #735b4a;
+            color: #040303;
+            /*position: absolute;*/
+            /*right: 500px;*/
+            /*bottom: 230px;*/
+            background-color: #c1bbb8;
+            margin: 50px;
+        }
+
+        #skill{
+           /* display: flex;*/
+           /*flex-direction: column;*/
+           position: relative;
+           width: 100vw;
+           height: 100vh;
+           display: inline-block;
+           margin: 15px;
+           transition: transform 0.3s ease-in-out;
+       }
+
+       #skill>h2{
+           color: #494d50;
+           font-size: xx-large;
+           /*position: absolute;*/
+           text-align: center;
+
+       }
+       #skill>div>h3{
+           color: #0f1f53;
+           font-size: x-large;
+
+       }
+       #para{
+           width: 700px;
+           text-align: center;
+           border-radius: 10px;
+           box-shadow: rgba(64, 58, 62, 0.4) 5px 5px, rgba(104, 101, 103, 0.3) 10px 10px, rgba(122, 115, 120, 0.2) 15px 15px, rgba(174, 167, 171, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+           /*grid-template-columns: repeat(4,1fr);*/
+           height: 150px;
+           /*display: flex;*/
+           /*flex-direction: column;*/
+           justify-content: right;
+           position: absolute;
+           right: 50px;
+           top: 100px;
+           /*top: 250px;*/
+           background-color: #9c9898;
+           border: 1px solid #2c292b;
+           margin: 15px;
+           padding: 15px;
+           align-self: center;
+       }
+       #para2{
+           width: 700px;
+           text-align: center;
+           border-radius: 10px;
+           height: 150px;
+           position: absolute;
+           right: 50px;
+           top: 400px;
+           box-shadow: rgba(64, 58, 62, 0.4) 5px 5px, rgba(104, 101, 103, 0.3) 10px 10px, rgba(122, 115, 120, 0.2) 15px 15px, rgba(174, 167, 171, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+           /*display: flex;*/
+           /*justify-content: right;*/
+           background-color: #9c9898;
+           border: 1px solid #2c292b;
+           margin: 15px;
+           padding: 15px;
+       }
+
+       #service{
+           width: 100vw;
+           height: 100vh;
+       }
+
+       #work{
+           width: 100vw;
+           height: 100vh;
+       }
+       /*#tech{*/
+       /*    padding: 50px;*/
+       /*    margin: 10px;*/
+       /*}*/
+
+        #contact{
+            background-color: #fff5df;
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+            position: relative;
+        }
+
+
+    </style>
+
+
 </head>
+
 <body>
+
+<section id="first">
+    <header>
+        <h2>CHANIKA JEEWANTHI</h2>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="pages/aboutPage.html">ABOUT</a>
+            <a href="pages/skillsPage.html">SKILLS</a>
+            <a href="pages/servicesPage.html">SERVICES</a>
+            <a href="pages/workPage.html">WORK</a>
+            <a href="pages/contactPage.html">CONTACT</a>
+        </nav>
+    </header>
     <div>
-        <h2>Chanika Jeewanthi</h2>
-        <a href="index.html">HOME</a>
-        <a href="pages/aboutPage.html">ABOUT</a>
-        <a href="pages/skillsPage.html">SKILLS</a>
-        <a href="pages/servicesPage.html">SERVICES</a>
-        <a href="pages/workPage.html">WORK</a>
-        <a href="pages/contactPage.html">CONTACT</a>
-    </div>
-    <div>
-        <ol>
-            <h1>Hi There!</h1>
-            <h2>I'm Chanika Jeewanthi.</h2>
-            <h3>Full Stack Developer</h3>
+        <ol class="text">
+            <h1 id="main">Hi There!</h1>
+            <h2 id="main1">I'm Chanika Jeewanthi.</h2>
+            <h3 id="main2">Full Stack Developer</h3>
         </ol>
     </div>
-    <!--<picture>-->
-    <!--    <source media="(min-width: 300px)" srcset="assets/images/IMG-20250116-WA0007.jpg" type="image/jpg">-->
-    <!--</picture>-->
+</section>
 
-    <img src="assets/images/IMG-20250116-WA0007.jpg" width="200">
+<section id="about">
+
+    <h2>About me,</h2>
 
     <div>
-        <h2>About me,</h2>
+        <img src="assets/images/IMG-20250116-WA0007.jpg" id="img" >
         <p>
-            Passionate software engineering student at IJSE, driven by technology and problem-solving. I love building innovative solutions that make a difference. Let's connect and create something amazing!</p>
-    </div>
-    <div>
-        <h2>SKILLS</h2>
-        <div>
-            <h3>Backend Development Skills</h3>
-
-            <img src="assets/images/browser.png" width="200">
-            <p>Experienced in server-side languages (Python, Node.js, Ruby, PHP, Java) and databases (MySQL, PostgreSQL, MongoDB).</p>
-        </div>
-
-        <div>
-            <h3>Web design & UI/UX Design</h3>
-            <img src="assets/images/ui-ux.png" width="200">
-
-            <p>Skilled in wireframing (Figma, Adobe XD), UX principles, and responsive design for user-friendly, cross-device websites.</p>
-
-        </div>
-        <div>
-            <h3>Technical Skills</h3>
-            <span>
-            <img src="assets/images/java.png" width="50">
-      </span>
-            <span>
-            <img src="assets/images/mysql.png" width="50">
-      </span>
-            <span>
-            <img src="assets/images/html.png" width="50">
-      </span>
-            <span>
-            <img src="assets/images/java-script.png" width="50">
-      </span>
-            <span>
-            <img src="assets/images/css-3.png" width="50">
-      </span>
-            <span>
-            <img src="assets/images/github.png" width="50">
-      </span>
-            <span>
-            <img src="assets/images/figma.png" width="50">
-      </span>
-
-        </div>
+            Passionate software engineering student at IJSE, driven by technology and problem-solving. I love building innovative solutions that make a difference. Let's connect and create something amazing!
+            <button id="about_btn">MORE DETAILS</button>
+        </p>
 
     </div>
+
+</section>
+
+<section id="skill">
+    <h2>SKILLS</h2>
+
+    <h3>Backend Development Skills</h3>
+
     <div>
-        <h2>SERVICES</h2>
+        <img src="assets/images/browser.png" width="200">
+        <p id="para">
+            Wireframing & Prototyping: Tools like Figma, Adobe XD, or Sketch for designing user interfaces before implementation.
+            User Experience (UX): Basic knowledge of UX principles to create intuitive and user-friendly websites.
+            Responsive Design: Making websites accessible on all devices, using media queries and mobile-first design principles.
+        </p>
+    </div>
+
+    <h3>Web design & UI/UX Design</h3>
+
+    <div>
+        <img src="assets/images/ui-ux.png" width="200">
+        <p id="para2">Wireframing & Prototyping: Tools like Figma, Adobe XD, or Sketch for designing user interfaces before implementation.
+            User Experience (UX): Basic knowledge of UX principles to create intuitive and user-friendly websites.
+            Responsive Design: Making websites accessible on all devices, using media queries and mobile-first design principles.
+        </p>
+    </div>
+
+    <h3>Technical Skills</h3>
+
+    <div>
+        <img src="assets/images/java.png" width="50">
+        <img src="assets/images/mysql.png" width="50">
+        <img src="assets/images/html.png" width="50">
+        <img src="assets/images/java-script.png" width="50">
+        <img src="assets/images/css-3.png" width="50">
+        <img src="assets/images/figma.png" width="50">
+        <img src="assets/images/github.png" width="50">
+    </div>
+</section>
+
+<section id="service">
+    <h2>SERVICES</h2>
+
+    <div id="content">
         <div>
             <h3>Software Development </h3>
             <ul>
@@ -89,9 +289,7 @@
                 <li>Mobile App Development:</li>
                 <li>Desktop Applications:</li>
             </ul>
-
         </div>
-
         <div>
             <h3>UI/UX Development </h3>
             <ul>
@@ -100,33 +298,35 @@
             </ul>
         </div>
 
-        <div>
-            <h3>Freelancing & Remote Work </h3>
-            <ul>
-                <li>Providing remote software development services.</li>
-                <li>Offering part-time support for startups or smaller businesses.</li>
-            </ul>
-        </div>
-
     </div>
-    <div>
-        <h2>MY WORK</h2>
+    <div id="co">
+        <h3>Freelancing & Remote Work </h3>
+        <ul>
+            <li>Providing remote software development services.</li>
+            <li>Offering part-time support for startups or smaller businesses.</li>
+        </ul>
+    </div>
+
+</section>
+
+<section id="work">
+    <h2>MY WORK</h2>
+
+    <div id="content2">
         <div>
             <h3>Resin Art Management System</h3>
 
-            <img src="assets/images/img.png" width="300">
+            <img src="assets/images/img.png" width="200">
             <p>Resin art business software with POS, inventory management, sales tracking, order handling, payments, and analytics for seamless operations.</p>
-            <input type="button" value="More Details">
+            <button>MORE DETAILS</button>
         </div>
-
         <div>
             <h3>Tic Tac Toe Game Development</h3>
 
-            <img src="assets/images/img_1.png" width="300">
+            <img src="assets/images/img_1.png" width="200">
             <p>A 3x3 tic-tac-toe game showcasing my skills in game logic, UI design, and interactivity, with win detection and a reset option.</p>
             <input type="button" value="More Details">
         </div>
-
         <div>
             <h3>Inventory Management System</h3>
 
@@ -134,28 +334,18 @@
             <p>Stock management tool with tracking, categorization, and low-stock alerts, showcasing backend and database skills.</p>
             <input type="button" value="More Details">
         </div>
-
     </div>
-    <div>
-        <h3>Education</h3>
 
-        <ul>
-            <li>GDSE Diploma in IJSE</li>
-            <li>Certificate Course in IT(Epic Academy)</li>
-            <li>G.C.E.Advanced Level</li>
-            <li>G.C.E.Ordinary Level</li>
-        </ul>
-    </div>
+</section>
     <div>
         <h2>CONTACT</h2>
-        <div>
+
+        <section id="contact">
+
             <h1>LET'S WORK TOGETHER</h1>
             <p>Feel free to leave me a message via the form, or you can get a hold of me at <strong>chanikajeewanthi16@gmail.com</strong></p>
             <img src="assets/images/IMG-20250123-WA0016.jpg" width="200">
 
-        </div>
-
-        <div>
             <!--contact form-->
             <form>
                 <label for="name">Name</label>
@@ -186,7 +376,7 @@
                 <input type="button" value="SUBMIT">
 
             </form>
-        </div>
+        </section>
 
     </div>
 
