@@ -8,187 +8,281 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
 </head>
+
 <body>
-    <div>
-        <h2>Chanika Jeewanthi</h2>
-        <a href="index.html">HOME</a>
-        <a href="pages/aboutPage.html">ABOUT</a>
-        <a href="pages/skillsPage.html">SKILLS</a>
-        <a href="pages/servicesPage.html">SERVICES</a>
-        <a href="pages/workPage.html">WORK</a>
-        <a href="pages/contactPage.html">CONTACT</a>
+<section id="first">
+    <header>
+        <h2 style="display: flex; align-items: center; gap: 10px;">
+            <img src="assets/images/4019692.png" width="50px">
+            CHANIKA JEEWANTHI
+        </h2>
+        <nav>
+            <a href="#first">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#project">PROJECTS</a>
+            <a href="#assignment">ASSIGNMENTS</a>
+            <a href="#service">SERVICES</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+    <div class="text">
+        <h1 id="main">Hi There!</h1>
+        <h2 id="main1">I'm Chanika Jeewanthi.</h2>
+        <h3 id="main2">Full Stack Developer</h3>
     </div>
-    <div>
-        <ol>
-            <h1>Hi There!</h1>
-            <h2>I'm Chanika Jeewanthi.</h2>
-            <h3>Full Stack Developer</h3>
-        </ol>
-    </div>
-    <!--<picture>-->
-    <!--    <source media="(min-width: 300px)" srcset="assets/images/IMG-20250116-WA0007.jpg" type="image/jpg">-->
-    <!--</picture>-->
+</section>
 
-    <img src="assets/images/IMG-20250116-WA0007.jpg" width="200">
-
-    <div>
-        <h2>About me,</h2>
+<section id="about">
+    <h2>About me</h2>
+    <div class="about-content">
+        <img src="assets/images/IMG-20250123-WA0016.jpg" id="img" />
         <p>
-            Passionate software engineering student at IJSE, driven by technology and problem-solving. I love building innovative solutions that make a difference. Let's connect and create something amazing!</p>
+            Passionate software engineering student at IJSE, driven by technology and problem-solving.
+            I love building innovative solutions that make a difference. Let's connect and create something amazing!
+            <br /><br />
+            <button id="about_btn" onclick="window.location.href='pages/aboutPage.html'">MORE DETAILS</button>
+        </p>
     </div>
-    <div>
-        <h2>SKILLS</h2>
-        <div>
-            <h3>Backend Development Skills</h3>
+</section>
 
-            <img src="assets/images/browser.png" width="200">
-            <p>Experienced in server-side languages (Python, Node.js, Ruby, PHP, Java) and databases (MySQL, PostgreSQL, MongoDB).</p>
-        </div>
+<section id="project">
+    <h2>PROJECTS</h2>
 
-        <div>
-            <h3>Web design & UI/UX Design</h3>
-            <img src="assets/images/ui-ux.png" width="200">
-
-            <p>Skilled in wireframing (Figma, Adobe XD), UX principles, and responsive design for user-friendly, cross-device websites.</p>
-
-        </div>
-        <div>
-            <h3>Technical Skills</h3>
-            <span>
-            <img src="assets/images/java.png" width="50">
-      </span>
-            <span>
-            <img src="assets/images/mysql.png" width="50">
-      </span>
-            <span>
-            <img src="assets/images/html.png" width="50">
-      </span>
-            <span>
-            <img src="assets/images/java-script.png" width="50">
-      </span>
-            <span>
-            <img src="assets/images/css-3.png" width="50">
-      </span>
-            <span>
-            <img src="assets/images/github.png" width="50">
-      </span>
-            <span>
-            <img src="assets/images/figma.png" width="50">
-      </span>
-
-        </div>
-
-    </div>
-    <div>
-        <h2>SERVICES</h2>
-        <div>
-            <h3>Software Development </h3>
-            <ul>
-                <li>Custom Application Development</li>
-                <li>Web Development:</li>
-                <li>Mobile App Development:</li>
-                <li>Desktop Applications:</li>
-            </ul>
-
-        </div>
-
-        <div>
-            <h3>UI/UX Development </h3>
-            <ul>
-                <li>Frontend Development</li>
-                <li>Prototyping:</li>
-            </ul>
-        </div>
-
-        <div>
-            <h3>Freelancing & Remote Work </h3>
-            <ul>
-                <li>Providing remote software development services.</li>
-                <li>Offering part-time support for startups or smaller businesses.</li>
-            </ul>
-        </div>
-
-    </div>
-    <div>
-        <h2>MY WORK</h2>
-        <div>
+    <div id="content2">
+        <div class="project-card">
             <h3>Resin Art Management System</h3>
-
-            <img src="assets/images/img.png" width="300">
+            <img src="assets/images/img.png" alt="Resin Art System">
             <p>Resin art business software with POS, inventory management, sales tracking, order handling, payments, and analytics for seamless operations.</p>
-            <input type="button" value="More Details">
+            <button class="details-btn" onclick="window.location.href='pages/projectPage.html'">More Details</button>
         </div>
 
-        <div>
+        <div class="project-card">
             <h3>Tic Tac Toe Game Development</h3>
-
-            <img src="assets/images/img_1.png" width="300">
+            <img src="assets/images/img_1.png" alt="Tic Tac Toe">
             <p>A 3x3 tic-tac-toe game showcasing my skills in game logic, UI design, and interactivity, with win detection and a reset option.</p>
-            <input type="button" value="More Details">
+            <button class="details-btn" onclick="window.location.href='pages/projectPage.html'">More Details</button>
         </div>
 
-        <div>
+        <div class="project-card">
             <h3>Inventory Management System</h3>
-
-            <img src="assets/images/img_2.png" width="400">
+            <img src="assets/images/img_2.png" alt="Inventory System">
             <p>Stock management tool with tracking, categorization, and low-stock alerts, showcasing backend and database skills.</p>
-            <input type="button" value="More Details">
+            <button class="details-btn" onclick="window.location.href='pages/projectPage.html'">More Details</button>
+        </div>
+    </div>
+</section>
+
+<section id="assignment">
+    <h2>ASSIGNMENTS</h2>
+    <div class="assignment-grid">
+        <div class="unique-card">
+            <div class="card-top">
+                <img src="assets/images/Screenshot%202025-05-20%20202005.png" alt="GitHub">
+            </div>
+            <div class="card-bottom">
+                <h3>Assignment 1</h3>
+                <a href="https://github.com/chanikajeewanthi/myportfolio/blob/main/README.md" target="_blank">View Repository</a>
+            </div>
+        </div>
+
+        <div class="unique-card">
+            <div class="card-top">
+                <img src="assets/images/Screenshot%202025-05-21%20161959.png" alt="GitHub">
+            </div>
+            <div class="card-bottom">
+                <h3>Assignment 2</h3>
+                <a href="https://github.com/chanikajeewanthi/myportfolio" target="_blank">View Repository</a>
+            </div>
+        </div>
+
+        <div class="unique-card">
+            <div class="card-top">
+                <img src="assets/images/Screenshot%202025-05-21%20162147.png" alt="GitHub">
+            </div>
+            <div class="card-bottom">
+                <h3>Assignment 3</h3>
+                <a href="https://github.com/chanikajeewanthi/Assignment-03" target="_blank">View Repository</a>
+            </div>
+        </div>
+
+        <div class="unique-card">
+            <div class="card-top">
+                <img src="assets/images/Screenshot%202025-05-21%20162449.png" alt="GitHub">
+            </div>
+            <div class="card-bottom">
+                <h3>Assignment 4</h3>
+                <a href="https://github.com/chanikajeewanthi/Assignment-04" target="_blank">View Repository</a>
+            </div>
+        </div>
+        <div class="unique-card">
+            <div class="card-top">
+                <img src="assets/images/Screenshot%202025-05-21%20161959.png" alt="GitHub">
+            </div>
+            <div class="card-bottom">
+                <h3>Assignment 5</h3>
+                <a href="https://github.com/chanikajeewanthi/myportfolio" target="_blank">View Repository</a>
+            </div>
+        </div>
+
+        <div class="unique-card">
+            <div class="card-top">
+                <img src="assets/images/Screenshot%202025-05-21%20162813.png" alt="GitHub">
+            </div>
+            <div class="card-bottom">
+                <h3>Assignment 6</h3>
+                <a href="https://github.com/chanikajeewanthi/Assignment-06" target="_blank">View Repository</a>
+            </div>
+        </div>
+
+        <div class="unique-card">
+            <div class="card-top">
+                <img src="assets/images/Screenshot%202025-05-21%20162949.png" alt="GitHub">
+            </div>
+            <div class="card-bottom">
+                <h3>Assignment 7</h3>
+                <a href="https://github.com/chanikajeewanthi/Assignment-07" target="_blank">View Repository</a>
+            </div>
+        </div>
+
+        <div class="unique-card">
+            <div class="card-top">
+                <img src="assets/images/Screenshot%202025-05-21%20163153.png" alt="GitHub">
+            </div>
+            <div class="card-bottom">
+                <h3>Assignment 8</h3>
+                <a href="https://github.com/chanikajeewanthi/Assignment-08" target="_blank">View Repository</a>
+            </div>
+        </div>
+
+        <div class="unique-card">
+            <div class="card-top">
+                <img src="assets/images/Screenshot%202025-05-21%20163331.png" alt="GitHub">
+            </div>
+            <div class="card-bottom">
+                <h3>Assignment 9</h3>
+                <a href="https://github.com/chanikajeewanthi/Assignment-09" target="_blank">View Repository</a>
+            </div>
+        </div>
+
+        <div class="unique-card">
+            <div class="card-top">
+                <img src="assets/icons/github-icon.png" alt="GitHub">
+            </div>
+            <div class="card-bottom">
+                <h3>Assignment 10</h3>
+                <a href="https://github.com/yourusername/assignment1" target="_blank">View Repository</a>
+            </div>
+        </div>
+
+        <div class="unique-card">
+            <div class="card-top">
+                <img src="assets/images/Screenshot%202025-05-21%20162949.png" alt="GitHub">
+            </div>
+            <div class="card-bottom">
+                <h3>Assignment 11</h3>
+                <a href="https://github.com/chanikajeewanthi/Assignment-07" target="_blank">View Repository</a>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<section id="service">
+    <h2>SERVICES</h2>
+
+    <div id="content">
+        <div class="service-card full-image-card">
+            <img src="assets/images/Top%20Cloud%20Software%20Development%20Company%20in%20USA.jpg" alt="Software Development">
+            <div class="overlay">
+                <h3>Software Development</h3>
+                <ul>
+                    <li>Custom Application Development</li>
+                    <li>Web Development</li>
+                    <li>Mobile App Development</li>
+                    <li>Desktop Applications</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-card full-image-card">
+            <img src="assets/images/Ui%20Ux%20Development%20Design%20Background%20Concept,%20Ui%20Ux%20Design,%20Development,%20Background%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg" alt="Software Development">
+            <div class="overlay">
+                <h3>UI/UX Development</h3>
+                <ul>
+                    <li>Frontend Development</li>
+                    <li>Prototyping</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-card full-image-card">
+            <img src="assets/images/_Crop Freelancer Typing On Laptop_ by Stocksy Contributor _Milles Team_.jpg" alt="Software Development">
+            <div class="overlay">
+                <h3>Freelancing & Remote Work</h3>
+                <ul>
+                    <li>Providing remote software development services.</li>
+                    <li>Offering part-time support for startups or smaller businesses.</li>
+                </ul>
+            </div>
         </div>
 
     </div>
-    <div>
-        <h3>Education</h3>
 
-        <ul>
-            <li>GDSE Diploma in IJSE</li>
-            <li>Certificate Course in IT(Epic Academy)</li>
-            <li>G.C.E.Advanced Level</li>
-            <li>G.C.E.Ordinary Level</li>
-        </ul>
-    </div>
-    <div>
-        <h2>CONTACT</h2>
-        <div>
-            <h1>LET'S WORK TOGETHER</h1>
-            <p>Feel free to leave me a message via the form, or you can get a hold of me at <strong>chanikajeewanthi16@gmail.com</strong></p>
-            <img src="assets/images/IMG-20250123-WA0016.jpg" width="200">
+</section>
 
+<section id="contact">
+    <h2>CONTACT</h2>
+
+    <div class="cute-contact-container">
+        <div class="cute-contact-info">
+            <h3>Let’s Work Together! 💖</h3>
+            <p>Got a project or just want to say hi? I’d love to hear from you!</p>
+            <img src="assets/images/481016828_935788405396701_8832816942807097494_n.jpg" alt="Profile Image">
         </div>
 
-        <div>
-            <!--contact form-->
+        <div class="cute-contact-form">
             <form>
-                <label for="name">Name</label>
-                <br>
-                <input type="text" id="name" placeholder="Enter your name">
-                <br><br>
+                <label>Your Name*</label>
+                <input type="text" placeholder="e.g. Chanikajeewanthi" required>
 
-                <label for="email">Email Address</label>
-                <br>
-                <input type="email" id="email" placeholder="Enter your email">
-                <br><br>
+                <label>Email Address*</label>
+                <input type="email" placeholder="e.g. chani@email.com" required>
 
-                <label for="phone">Phone</label>
-                <br>
-                <input type="tel" id="phone" placeholder="Enter your phone number">
-                <br><br>
+                <label>Phone</label>
+                <input type="tel" placeholder="e.g. 0771234567">
 
-                <label for="regarding">What's this regarding</label>
-                <br>
-                <input type="text" id="regarding" placeholder="Enter your regard">
-                <br><br>
+                <label>Subject*</label>
+                <input type="text" placeholder="What’s this about?" required>
 
-                <label for="message">Message</label>
-                <br>
-                <textarea id="message" placeholder="Enter your message"></textarea>
-                <br><br>
+                <label>Message*</label>
+                <textarea rows="4" placeholder="Type your lovely message here..." required></textarea>
 
-                <input type="button" value="SUBMIT">
-
+                <button type="submit">🌸 Send Message</button>
             </form>
         </div>
+    </div>
+</section>
+
+<footer class="cute-footer">
+    <div class="social-icons">
+
+        <a href="https://www.linkedin.com/in/chanika-jeewanthi-419a48321/" target="_blank">
+            <img src="assets/images/icons8-linkedin-50.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/chanikajeewanthi" target="_blank">
+            <img src="assets/images/icons8-github-50.png" alt="GitHub">
+        </a>
+        <a href="https://www.instagram.com/___cha_nii___/" target="_blank">
+            <img src="assets/images/icons8-instagram-50%20(2).png"alt="Instagram">
+        </a>
 
     </div>
+
+
+    <p>© 2025 Chanikajeewanthi. All rights reserved. 🌸</p>
+</footer>
+
 
 </body>
 </html>
