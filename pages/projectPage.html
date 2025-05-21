@@ -51,6 +51,23 @@
             font-size: 1rem;
             line-height: 1.6;
         }
+        @media (max-width: 768px) {
+            .project {
+                flex-direction: column;
+            }
+
+            .project:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .project img {
+                max-width: 100%;
+            }
+
+            .project-content {
+                padding: 10px 0;
+            }
+        }
     </style>
 </head>
 <body>
