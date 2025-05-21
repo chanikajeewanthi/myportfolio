@@ -244,6 +244,47 @@
             font-size: 2.5rem;
             margin-bottom: 40px;
         }
+        #content2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .project-card {
+            background: #ffffff10;
+            backdrop-filter: blur(10px);
+            border: 1px solid #ffffff20;
+            border-radius: 16px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            padding: 25px;
+            width: 300px;
+            color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: #eaeaea;
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        .project-card p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #dcdcdc;
+        }
 
     </style>
 
